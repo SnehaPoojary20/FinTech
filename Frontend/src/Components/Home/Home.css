@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY';
+    src: url('./Birds of Paradise ╕ PERSONAL USE ONLY.ttf') format('truetype');
+  }
+
+  .home{
+    margin-top: 20vh;
+    padding-left: 10vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY', sans-serif;
+    font-size: 5rem;
+    color: gold;
+   }

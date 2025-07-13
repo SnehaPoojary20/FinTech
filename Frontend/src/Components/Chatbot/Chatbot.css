@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY';
+    src: url('./Birds of Paradise ╕ PERSONAL USE ONLY.ttf') format('truetype');
+  }
+
+.chatbot h1{
+   font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY', sans-serif;
+   font-size: 5rem;
+   font-weight: lighter;
+   color: gold;
+   text-align: center;
+}
+
+.chatbot{
+    align-items: center;
+    color: gold;
+    text-align: center;
+    margin-bottom: 20vh;
+    
+    /* background:  linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+    url('./background.jpg'); */
+}
+
+.input-box{
+    background:  linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+    url('./background.jpg');
+    height: 300px;
+    width: 500px;
+    border: 2px solid gold;
+    border-radius: 20px;
+    font-weight: bolder;
+}

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY';
+    src: url('./Birds of Paradise ╕ PERSONAL USE ONLY.ttf') format('truetype');
+  }
+
+.expense{
+    margin-top: 30vh;
+    color: gold;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    gap: 20rem;
+}
+
+.expense h1{
+   font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY', sans-serif;
+   font-size: 5rem;
+   font-weight: lighter;
+ 
+    }
+
+form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+    url('./background.jpg');
+  color: gold;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+
+.box{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  margin-bottom: 1rem;
+  flex-wrap: wrap; 
+}
+
+.form-row label {
+  color: gold;
+  font-weight: bold;
+}
+
+.button{
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid gold;
+      background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+    url('./background.jpg');
+
+}
+
+.button:hover{
+    background-color: green;
+    color: black;
+    font-weight: bolder;
+}
