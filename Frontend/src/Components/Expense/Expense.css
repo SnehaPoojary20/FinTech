@@ -1,11 +1,7 @@
-@font-face {
-    font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY';
-    src: url('./Birds of Paradise ╕ PERSONAL USE ONLY.ttf') format('truetype');
-  }
 
 .expense{
     margin-top: 30vh;
-    color: gold;
+    color: black;
     text-align: center;
     align-items: center;
     margin-bottom: 10vh;
@@ -13,7 +9,7 @@
 }
 
 .expense h1{
-   font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY', sans-serif;
+   font-family: 'Times New Roman', Times, serif;
    font-size: 5rem;
    font-weight: lighter;
  
@@ -30,9 +26,8 @@ input {
   width: 200px;
   padding: 5px;
     background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-    url('./background.jpg');
-  color: gold;
+    linear-gradient(135deg, #1e3c72, #2a5298, #89f7fe, #66a6ff);
+  color: silver;
   font-weight: bolder;
   font-size: larger;
 }
@@ -62,10 +57,9 @@ input {
     height: 50px;
     width: 120px;
     border-radius: 10px;
-    border: 2px solid gold;
+    border: 2px solid silver;
       background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-    url('./background.jpg');
+   linear-gradient(135deg, #1e3c72, #2a5298, #89f7fe, #66a6ff);
 
 }
 
@@ -73,4 +67,6 @@ input {
     background-color: green;
     color: black;
     font-weight: bolder;
+    border: 3px solid silver;
+    box-shadow: 3px 3px 3px 3px silver;
 }

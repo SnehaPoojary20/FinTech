@@ -1,8 +1,32 @@
-body{
-    background-image: url('./background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    padding: 0;
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    background-size: 400% 400%;
+    animation: gradientSlide 10s ease infinite;
+}
+
+@keyframes gradientSlide {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
+

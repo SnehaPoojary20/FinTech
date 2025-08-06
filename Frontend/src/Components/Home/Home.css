@@ -10,5 +10,11 @@
     align-items: center;
     font-family: 'Birds of Paradise ╕ PERSONAL USE ONLY', sans-serif;
     font-size: 5rem;
-    color: gold;
+    color: black;
    }
+
+.expense{
+  margin-top: 10vh;
+  align-items: center;
+  text-align: center;
+}

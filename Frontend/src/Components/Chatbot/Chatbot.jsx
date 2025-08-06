@@ -1,57 +1,50 @@
-import axios from "axios";
-import React, { useState } from 'react'
+import React from 'react';
 import "./Chatbot.css";
+import ChatForm from './ChatForm.jsx';
+import { useChat } from './ChatContext.jsx';
+import ChatMessage from './ChatMessage.jsx';
 
 const Chatbot = () => {
-    const[query,setQuery]=useState('');
-    const[response,setResponse]=useState(null);
-    const[loading,setLoading]=useState(false);
+    const { chatHistory } = useChat();
 
-    const handleQuery = async () => {
-    setLoading(true);
+    return (
+        <div className='chatbot'>
+            <div className='chatbot-popup'>
+                <div className='chat-header'>
+                    <div className='header-info'>
+                        <span className="logo-text">CookSafe AI</span>
+                    </div>
+                    <button className='material-symbols-rounded'>keyboard_arrow_down</button>
+                </div>
 
-    try {
-      const res = await axios.post(
-        'https://studio.lyzr.ai/api/v1/agent/finance-genie/ask',
-        {
-          input: query
-        },
-        {
-          headers: {
-            Authorization: 'Bearer sk-default-avMn4GjSWbU0uTLjutI77PUqtZta28TD',
-            'Content-Type': 'application/json'
-          }
-        }
-      );
+                <div className='chat-body'>
+                    <div className='message bot-message'>
+                        <p className='message-text'>
+                            Hey there Finance Enthusiasts <br />
+                            How Can I Help You ??
+                        </p>
+                    </div>
 
-      setResponse(res.data.output);
-    } catch (error) {
-      console.error('Error:', error);
-      setResponse({ error: 'Something went wrong!' });
-    }
+                    {chatHistory.map((chat, index) => (
+                        <ChatMessage key={index} role={chat.role} text={chat.text} />
+                    ))}
+                </div>
 
-    setLoading(false);
-  };
+                <div className='chat-footer'>
+                    <ChatForm />
+                </div>
+            </div>
+        </div>
+    );
+};
 
-  return (
-    <div className="chatbot">
-      <h1> Finance Genie</h1>
-       <input
-        type="text"
-        placeholder="e.g., How much am I saving monthly?"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        className="input-box"
-      />
-       <button
-        onClick={handleQuery}
-        className="button"
-        disabled={loading}
-      >
-        {loading ? 'Thinking...' : 'Ask Genie'}
-      </button>
-    </div>
-  )
-}
+export default Chatbot;
 
-export default Chatbot
+
+
+
+
+
+
+
+// https://studio.lyzr.ai/api/v1/agent/finance-genie/ask

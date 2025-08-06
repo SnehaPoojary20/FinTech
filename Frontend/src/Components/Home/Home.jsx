@@ -1,17 +1,22 @@
 import React from 'react'
 import "./Home.css";
+import Expense from "../Expense/Expense";
+
 
 const Home = () => {
   return (
-    <div className='home'>
-       <p>Fintech  -   Where AI Meets Financial Wisdom.
+           <> 
+          <div className='home'>
+       <p>Welcome To Fintech  <br></br>
+           Where AI Meets Financial Wisdom.
         </p>
-        {/* <h1>Fintech
-          <br></br>
-          Where AI Meets Financial Wisdom.
-           </h1> */}
-    </div>
+        <br></br>
+      </div>
+      <div className='expense'>
+         <Expense/>
+        </div>
+       </>
   )
 }
 
-export default Home
+export default Home;
